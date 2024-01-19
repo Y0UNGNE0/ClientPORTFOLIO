@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Add this line in the <head> section of your HTML file -->
+    <script src="javascript.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body style="font-family: Montserrat; color: #232323;">
+    <header class="row">
+        <div class="leftSection col-4" id="dynamicImageContainer">
+            <!-- Dynamic image content will be inserted here -->
+        </div>
+        <div class="rightSection col-8 mr-10">
+            <div id="dynamicContentContainer">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+            <div class="pb-10" id="dynamicTableContainer">
+                <!-- Dynamic table content will be inserted here -->
+            </div>
+            <div id="dynamicSkillsetsContainer">
+                <!-- Dynamic skillsets will be inserted here -->
+            </div>
+        </div>
+    </header>
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5">
+            <!-- Vetted skills with table -->
+
+            <div id="dynamicSkillsContainer" class=""></div>
+            <!-- Professional summary with company Experience -->
+        </div>
+
+        <div class="col-8">
+            <!-- Table  -->
+            <div>
+                <table class="w-full text-sm text-left rtl:text-right">
+                    <thead class="text-base border-b border-gray-900">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Skills</th>
+                            <th scope="col" class="px-6 py-3">Results</th>
+                            <th scope="col" class="px-6 py-3">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="yourTableBodyId"></tbody>
+                </table>
+            </div>
+            <!-- Experience company  -->
+        </div>
+    </section>
+
+
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5 z-10">
+            <!-- Vetted skills with table -->
+
+
+            <div id="dynamicProfessionalSummaryContainer" class=" z-10 dot-div-yellow4 "></div>
+
+            <!-- application and tools with button -->
+        </div>
+
+        <div class="col-8">
+            <!-- Table  -->
+
+            <!-- Experience company  -->
+
+            <div class="flex flex-row" id="experienceCompnay"></div>
+            <!-- TWo buttons Aws @ Cloud -->
+
+        </div>
+    </section>
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5">
+            <!-- Vetted skills with table -->
+
+
+            <!-- application and tools with button -->
+
+            <div class="VettedFont">
+                <div style="border-bottom: 1px solid rgb(0, 0, 0)" class="w-36 ">
+                    <p class="VettedFont">Application Tools & Know</p>
+                </div>
+            </div>
+            <!-- work history with detail experience -->
+
+        </div>
+
+        <div class="col-8">
+            <!-- Table  -->
+
+
+            <div class="flex flex-row gap-4">
+                <div id="cardContainer"></div>
+            </div>
+
+            <!-- detail experience -->
+        </div>
+    </section>
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5">
+            <!-- Vetted skills with table -->
+
+
+            <!-- work history with detail experience -->
+
+            <div class="">
+                <div style="border-bottom: 1px solid rgb(0, 0, 0)" class="w-36 ">
+                    <p class="VettedFont">Work History</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-8 border-l border-gray-500">
+            <!-- Table  -->
+
+            <!-- detail experience -->
+            <div>
+                <div class="flex flex-row justify-between ">
+
+
+                    <div class="  pl-4 dot-div-work">
+                        <p class="summary-title">DEVOPS ENGINEER</p>
+                        <p class="summary-text  pbFor-4  dot-div-work3">
+                            NEOITO TECHNOLOGIES
+                        </p>
+                        <p class="summary-per pbFor-4  dot-div-work2">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Illum quas et aliquam esse quod qui reprehenderit doloremque
+                            accusantium dignissimos iusto inventore facere veritatis,
+                            atque sit enim, amet, voluptatem facilis consequuntur?
+                        </p>
+
+
+                    </div>
+                    <div class="ml-6">
+                        <div>
+                            <div class="w-36">
+                                <p class="text-gray-600 text-sm">Jan 2022 - Present</p>
+                                <p class="text-gray-600 text-sm pt-2">1yr 5 months</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="flex flex-row justify-between mt-4 ">
+                    <div>
+                        <div>
+                            <div class="  pl-4">
+                                <p class="summary-title">DEVOPS ENGINEER</p>
+                                <p class="summary-text pbFor-4 ">
+                                    NEOITO TECHNOLOGIES
+                                </p>
+                                <p class="summary-per pbFor-4 text-gray-600">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Illum quas et aliquam esse quod qui reprehenderit doloremque
+                                    accusantium dignissimos iusto inventore facere veritatis,
+                                    atque sit enim, amet, voluptatem facilis consequuntur?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6">
+                        <div>
+                            <div class="w-36">
+                                <p class="text-gray-600 text-sm">Jan 2022 - Present</p>
+                                <p class="text-gray-600 text-sm pt-2">1yr 5 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- major projects details -->
+
+
+        </div>
+    </section>
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5">
+            <!-- Vetted skills with table -->
+
+            <!-- major projects with project details -->
+            <div id="dynamicMajorProjectsContainer" class="dot-div-yellow5"></div>
+
+
+        </div>
+
+        <div class="col-8 border-l border-gray-500">
+
+            <!-- major projects details -->
+
+            <div>
+                <div class="flex flex-row justify-between ">
+                    <div class="">
+                        <div>
+                            <div class="  pl-4 dot-div-proj">
+                                <p class="dot-div-proj2 summary-title">
+                                    Internal and Multiple Client Projects
+                                </p>
+                                <p class="pbFor-4 summary-text">
+                                    NEOITO TECHNOLOGIES
+                                </p>
+
+                                <ul class="list-disc summary-per pbFor-4 text-gray-600 pl-8">
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                    <li>
+                                        AWS prioritizes security and compliance, implementing
+                                        robust measures to protect customer data. The platform
+                                        provides various security tools and features, and it
+                                        complies with numerous industry standards,
+                                    </li>
+                                    <li>
+                                        One of the key advantages of AWS is its scalability. Users
+                                        can easily scale their resources up or down based on
+                                        demand.
+                                    </li>
+                                    <li>
+                                        Now this is a story all about how, my life got
+                                        flipped-turned upside down Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                    <li>
+                                        AWS offers a diverse set of services, including computing
+                                        power (EC2), storage (S3), databases (RDS), machine
+                                        learning (Sagemaker), and more. This comprehensive
+                                        portfolio caters to a wide range of business needs and
+                                        industries
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-row justify-items-start   ">
+                                <div class="pl-4">
+                                    <button type="button" class="summary-button">
+                                        Ngnix
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        AWS
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        CI/CD
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        Docker
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6">
+                        <div>
+                            <div class="w-36">
+                                <p class="text-gray-600 text-sm">Jan 2022 - Present</p>
+                                <p class="text-gray-600 text-sm pt-2">1yr 5 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-between mt-4">
+                    <div>
+                        <div>
+                            <div class="  pl-4 dot-div-proj3">
+                                <p class="summary-title dot-div-proj4">AWS Opencloud</p>
+                                <p class="summary-text pbFor-4 ">
+                                    NEOITO TECHNOLOGIES
+                                </p>
+
+                                <ul class="list-disc summary-per pbFor-4  pl-8">
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                    <li>
+                                        AWS prioritizes security and compliance, implementing
+                                        robust measures to protect customer data. The platform
+                                        provides various security tools and features, and it
+                                        complies with numerous industry standards,
+                                    </li>
+                                    <li>
+                                        One of the key advantages of AWS is its scalability. Users
+                                        can easily scale their resources up or down based on
+                                        demand.
+                                    </li>
+                                    <li>
+                                        Now this is a story all about how, my life got
+                                        flipped-turned upside down Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                    <li>
+                                        AWS offers a diverse set of services, including computing
+                                        power (EC2), storage (S3), databases (RDS), machine
+                                        learning (Sagemaker), and more. This comprehensive
+                                        portfolio caters to a wide range of business needs and
+                                        industries
+                                    </li>
+                                    <li>
+                                        One of the key advantages of AWS is its scalability. Users
+                                        can easily scale their resources up or down based on
+                                        demand.
+                                    </li>
+                                    <li>
+                                        Now this is a story all about how, my life got
+                                        flipped-turned upside down Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        AWS prioritizes security and compliance, implementing
+                                        robust measures to protect customer data. The platform
+                                        provides various security tools and features, and it
+                                        complies with numerous industry standards,
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-row justify-items-start   ">
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        JAVA
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        AWS
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6">
+                        <div>
+                            <div class="w-36">
+                                <p class="text-gray-600 text-sm">Jan 2022 - Present</p>
+                                <p class="text-gray-600 text-sm pt-2">1yr 5 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-row justify-between mt-4">
+                    <div>
+                        <div>
+                            <div class="  pl-4 dot-div-proj3">
+                                <p class="summary-title dot-div-proj4"> Mess Health Interactive Product</p>
+                                <p class="summary-text pbFor-4 ">
+                                    NEOITO TECHNOLOGIES
+                                </p>
+
+                                <ul class="list-disc  pbFor-4 summary-per pl-8">
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                    <li>
+                                        AWS prioritizes security and compliance, implementing
+                                        robust measures to protect customer data. The platform
+                                        provides various security tools and features, and it
+                                        complies with numerous industry standards,
+                                    </li>
+                                    <li>
+                                        One of the key advantages of AWS is its scalability. Users
+                                        can easily scale their resources up or down based on
+                                        demand.
+                                    </li>
+                                    <li>
+                                        Now this is a story all about how, my life got
+                                        flipped-turned upside down Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        AWS is a leading cloud computing platform, providing a
+                                        wide range of services, including computing power
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-row justify-items-start   ">
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        Java
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        Python
+                                    </button>
+                                </div>
+                                <div class="pl-4">
+                                    <button type="button" class="  summary-button">
+                                        CI/CD
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6">
+                        <div>
+                            <div class="w-36">
+                                <p class="text-gray-600 text-sm">Jan 2022 - Present</p>
+                                <p class="text-gray-600 text-sm pt-2">1yr 5 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="rowSection gap-12 ">
+        <div style="flex: 1" class="mr-5">
+            <!-- Vetted skills with table -->
+
+            <!-- education with college name -->
+            <div class="">
+                <div style="border-bottom: 1px solid rgb(0, 0, 0)" class="w-36">
+                    <p class="VettedFont">Education</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8">
+
+            <!-- education -->
+            <div class="grid grid-rows-1 grid-flow-col gap-1 ">
+                <div class="dot-div-edu">
+                    <div class="border-t border-gray-500 w-80 pt-4 dot-div-edu">
+                        <p class="text-xl pb-4 ">Bachelor Of Technologies</p>
+                        <p class="text-sm text-gray-600">
+                            GOVT.MODEL ENGINEERING
+                        </p>
+                    </div>
+                    <div class="w-48 pt-2">
+                        <p class="text-sm text-gray-600 ">College (2017)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
